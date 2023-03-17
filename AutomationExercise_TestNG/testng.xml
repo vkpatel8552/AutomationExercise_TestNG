@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AutomationExcerices: Regession Suite (Chrome)"
+	verbose="2">
+	   
+	<parameter name="runParallel" value="true" />
+	<parameter name="emailConfiguration"
+		value="emailConfig.properties" />
+	   
+	<parameter name="environment" value="config.properties" />
+	   
+	<parameter name="browser" value="Chrome" />
+
+	<listeners>
+		<listener
+			class-name="test.automationframework.Listeners.ExtentReportListener"></listener>
+		<listener
+			class-name="test.automationframework.Listeners.RetryListener"></listener>
+	</listeners>
+
+	<test name="AutomationExercise" parallel="classes"
+		thread-count="5">
+		<classes>
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.Login.LoginTest" />
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.Men.MenTest" />
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.Home.HomeTest" />
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.NewArrival.NewArrivalTest" /> 
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.MyWishList.MyWishListTest" />
+		</classes>
+	</test>
+</suite>

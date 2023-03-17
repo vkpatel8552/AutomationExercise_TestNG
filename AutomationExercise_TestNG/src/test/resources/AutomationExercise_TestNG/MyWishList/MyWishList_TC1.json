@@ -1,0 +1,17 @@
+{
+	"Data":{
+		"loggedInUserName":"kk1234@gmail.com",
+		"loggedInUserPassword":"test@12345",
+		"loginPageHeader":"Customer Login",
+		"userWelcomeMsg":"Welcome, kk patel!",
+		"homePageTitle":"Home Page",
+		"loginPageHeader":"Customer Login",
+		"hotSellerHeader":"Hot Sellers",
+		"productName":"Hero Hoodie",
+		"productSize":"M",
+		"productColor":"Green",
+		"productQty":"1",
+		"addToWishListMsg":"Hero Hoodie has been added to your Wish List. Click here to continue shopping.",
+		"removeWishListMsg":"Hero Hoodie has been removed from your Wish List."
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"Data":{
+		"loggedInUserName":"kk1234@gmail.com",
+		"loggedInUserPassword":"test@12345",
+		"loginPageHeader":"Customer Login",
+		"userWelcomeMsg":"Welcome, kk patel!",
+		"defaultWelcomeMsg":"Default welcome msg!"
+	}
+}

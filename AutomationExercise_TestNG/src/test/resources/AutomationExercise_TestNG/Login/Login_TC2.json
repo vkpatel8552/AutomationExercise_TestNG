@@ -1,0 +1,8 @@
+{
+	"Data":{
+		"loggedInUserName":"kkk@gmail.com",
+		"loggedInUserPassword":"test@12",
+		"loginPageHeader":"Customer Login",
+		"errMsg":"Incorrect CAPTCHA"
+	}
+}

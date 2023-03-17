@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>Dark</theme>
+        <encoding>UTF-8</encoding>
+        <protocol>http</protocol>
+        
+		<!--  Keep documentTitle tag value same as executionReport properties from emailConfig.properties -->
+        <documentTitle>TestExecutionReport-Luma</documentTitle><!-- title of the document -->
+        <testViewChartLocation>TOP</testViewChartLocation> <!-- location of charts in the test view -->
+      	<enableExceptionView>true</enableExceptionView>
+		<enableTestRunnerLogsView>true</enableTestRunnerLogsView>
+		
+		<reportName>Luma Automation Test Execution Report</reportName>
+		
+		<!-- report headline - displayed at top-nav, after reportHeadline -->
+        <reportHeadline></reportHeadline>
+      	<!-- custom javascript -->
+       <scripts>
+			<![CDATA[
+			<div style="text-align: left;">
+			<img src="https://magento.softwaretestingboard.com/pub/static/version1678540400/frontend/Magento/luma/en_US/images/logo.svg"/>
+			</div
+			$(document).ready(function() {
+			            $('#parentWithoutNodes').prop("checked", true).click();
+			$('#test-count-setting > div.modal-footer > a')[0].click();
+			});
+			]]>
+		</scripts>
+        
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+            .report-name { padding-left: 18px; } .report-name > img { float: 
+      left;height: 90%;margin-left: 30px;margin-top: 3px;width: auto; }
+        ]]>
+        </styles>
+    </configuration>
+</extentreports>

@@ -1,0 +1,20 @@
+{
+	"Data":{
+		"homePageTitle":"Home Page",
+		"hotSellerHeader":"Hot Sellers",
+		"customerReviewHeader":"Customer Reviews",
+		"productDescription":"So light and comfy, you'll love the Radiant Tee's organic fabric, feel, performance and style. You may never want to stop moving in this shirt."
+	},
+	"verifyProductDetails":{
+		"Name":"Radiant Tee",
+		"Price":"$22.00",
+		"Status":"IN STOCK",
+		"Code":"WS12"
+	},
+	"verifyProductAdditionalDetails":{
+		"Style":"Tee",
+		"Material":"Hemp, Spandex, Organic Cotton",
+		"Pattern":"Solid",
+		"Climate":"Indoor, Warm"
+	}
+}

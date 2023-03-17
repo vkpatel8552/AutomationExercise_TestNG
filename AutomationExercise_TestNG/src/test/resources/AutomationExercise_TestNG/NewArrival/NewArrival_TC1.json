@@ -1,0 +1,21 @@
+{
+	"Data":{
+		"homePageTitle":"Home Page",
+		"newArrivalPageHeader":"What's New",
+		"hotSellerHeader":"Luma's Latest",
+		"customerReviewHeader":"Customer Reviews",
+		"productDescription":"A sophisticated layer of warmth awaits you in our full-zip sweatshirt jacket. You'll reach for this one in any season to enjoy its sturdy exterior and plush interior."
+	},
+	"verifyProductDetails":{
+		"Name":"Phoebe Zipper Sweatshirt",
+		"Price":"$59.00",
+		"Status":"IN STOCK",
+		"Code":"WH07"
+	},
+	"verifyProductAdditionalDetails":{
+		"Style":"Full Zip, Sweatshirt, Hoodie",
+		"Material":"Cotton, Polyester",
+		"Pattern":"Solid",
+		"Climate":"Cool, Indoor, Mild"
+	}
+}
