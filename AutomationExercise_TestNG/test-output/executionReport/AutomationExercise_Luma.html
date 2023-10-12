@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Luma Automation Test Execution Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Friday, March 17, 2023, 01:54 pm (IST)</span></a>
+<a href="#"><span class="badge badge-primary">Thursday, October 12, 2023, 04:14 pm (IST)</span></a>
 </li>
 </ul>
 </div>
@@ -76,25 +76,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Friday, March 17, 2023, 01:54 pm (IST)</h3>
+<h3>Thursday, October 12, 2023, 04:14 pm (IST)</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Friday, March 17, 2023, 02:00 pm (IST)</h3>
+<h3>Thursday, October 12, 2023, 04:21 pm (IST)</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>9</h3>
+<h3>8</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -110,12 +110,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>9</b> tests passed
+<div><small data-tooltip='88%'>
+<b>8</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='11%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -133,9 +133,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>9</b> events passed</small></div>
+<div><small data-tooltip='72%'><b>8</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='27%'><b>3</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -152,11 +152,11 @@
 <tbody>
 <tr>
 <td>vivepate</td>
-<td>9</td>
-<td>0</td>
+<td>8</td>
 <td>1</td>
+<td>3</td>
 <td>0</td>
-<td>90%</td>
+<td>66.667%</td>
 </tr>
 </tbody>
 </table></div>
@@ -168,20 +168,20 @@
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>RegressionTest</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>62.5%</td>
+</tr>
+<tr>
 <td>SmokeTest</td>
 <td>3</td>
 <td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>RegressionTest</td>
-<td>6</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
-<td>85.714%</td>
+<td>75%</td>
 </tr>
 </tbody>
 </table></div>
@@ -194,12 +194,12 @@
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
 <tbody>
 <tr>
-<td>vivepate-mac-MacOSX-10.16</td>
-<td>9</td>
-<td>0</td>
+<td>vivepate-mac-MacOSX-13.3.1</td>
+<td>8</td>
 <td>1</td>
+<td>3</td>
 <td>0</td>
-<td>90%</td>
+<td>66.667%</td>
 </tr>
 </tbody>
 </table></div>
@@ -225,7 +225,7 @@
 </tr>
 <tr>
 <td>OS Version</td>
-<td>10.16</td>
+<td>13.3.1</td>
 </tr>
 <tr>
 <td>OS Arch</td>
@@ -244,8 +244,8 @@
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 9,
-failParent: 0,
+passParent: 8,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -261,8 +261,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 9,
-failEvents: 0,
+passEvents: 8,
+failEvents: 3,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
@@ -278,6 +278,7 @@ infoEvents: 0
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -291,70 +292,26 @@ infoEvents: 0
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">SmokeTest</a><a class="dropdown-item" href="#">RegressionTest</a>
+<a class="dropdown-item" href="#">RegressionTest</a><a class="dropdown-item" href="#">SmokeTest</a>
 </ul>
 </li>
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i></a>
 <ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">vivepate-mac-MacOSX-10.16</a>
+<a class="dropdown-item" href="#">vivepate-mac-MacOSX-13.3.1</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="2"
-          author="vivepate"
-          tag="RegressionTest"
-          device="vivepate-mac-MacOSX-10.16">
-          <div class="test-detail">
-            <p class="name"><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></p>
-            <p class="text-sm">
-              <span>13:55:03</span> / <span>00:00:08:501</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass"><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></h5>
-<span class='badge badge-success'>03.17.2023 13:55:03</span>
-<span class='badge badge-danger'>03.17.2023 13:55:12</span>
-<span class='badge badge-default'>00:00:08:501</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
-<span class="badge badge-pill badge-default">RegressionTest</span>
-<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-10.16</span></div>
-<div class="m-t-10 m-l-5"><span id ="addProductFromLumaLatest"><b>Test Method: com.test.automation.AutomationExercise_TestNG.NewArrival.NewArrivalTest.addProductFromLumaLatest</b></span></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:55:12</td>
-        <td>
-          <span class='badge white-text green'>addProductFromLumaLatest - Test Case Passed.</span>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="pass" test-id="1"
           author="vivepate"
           tag="SmokeTest"
-          device="vivepate-mac-MacOSX-10.16">
+          device="vivepate-mac-MacOSX-13.3.1">
           <div class="test-detail">
-            <p class="name"><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></p>
+            <p class="name"><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></p>
             <p class="text-sm">
-              <span>13:55:03</span> / <span>00:00:09:048</span>
+              <span>16:15:28</span> / <span>00:00:14:072</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -362,18 +319,18 @@ infoEvents: 0
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass"><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></h5>
-<span class='badge badge-success'>03.17.2023 13:55:03</span>
-<span class='badge badge-danger'>03.17.2023 13:55:12</span>
-<span class='badge badge-default'>00:00:09:048</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<h5 class="test-status text-pass"><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></h5>
+<span class='badge badge-success'>10.12.2023 16:15:28</span>
+<span class='badge badge-danger'>10.12.2023 16:15:42</span>
+<span class='badge badge-default'>00:00:14:072</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
 <span class="badge badge-pill badge-default">SmokeTest</span>
-<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-10.16</span></div>
-<div class="m-t-10 m-l-5"><span id ="addProductToCompareList"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Men.MenTest.addProductToCompareList</b></span></div>
+<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-13.3.1</span></div>
+<div class="m-t-10 m-l-5"><span id ="addProductHotSeller"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Home.HomeTest.addProductHotSeller</b></span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -381,9 +338,9 @@ infoEvents: 0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:55:12</td>
+        <td>16:15:42</td>
         <td>
-          <span class='badge white-text green'>addProductToCompareList - Test Case Passed.</span>
+          <span class='badge white-text green'>addProductHotSeller - Test Case Passed.</span>
         </td>
       </tr>
   </tbody>
@@ -391,14 +348,14 @@ infoEvents: 0
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="pass" test-id="2"
           author="vivepate"
           tag="SmokeTest"
-          device="vivepate-mac-MacOSX-10.16">
+          device="vivepate-mac-MacOSX-13.3.1">
           <div class="test-detail">
             <p class="name"><b>Luma_Login_TC_1: Verify Login Functionality with Valid Credentials</b></p>
             <p class="text-sm">
-              <span>13:55:03</span> / <span>00:01:17:254</span>
+              <span>16:15:28</span> / <span>00:01:22:105</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -407,16 +364,16 @@ infoEvents: 0
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass"><b>Luma_Login_TC_1: Verify Login Functionality with Valid Credentials</b></h5>
-<span class='badge badge-success'>03.17.2023 13:55:03</span>
-<span class='badge badge-danger'>03.17.2023 13:56:21</span>
-<span class='badge badge-default'>00:01:17:254</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-success'>10.12.2023 16:15:28</span>
+<span class='badge badge-danger'>10.12.2023 16:16:50</span>
+<span class='badge badge-default'>00:01:22:105</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
 <span class="badge badge-pill badge-default">SmokeTest</span>
-<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-10.16</span></div>
+<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-13.3.1</span></div>
 <div class="m-t-10 m-l-5"><span id ="loginWithValidCredential"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Login.LoginTest.loginWithValidCredential</b></span></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -425,7 +382,7 @@ infoEvents: 0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:56:21</td>
+        <td>16:16:50</td>
         <td>
           <span class='badge white-text green'>loginWithValidCredential - Test Case Passed.</span>
         </td>
@@ -435,14 +392,14 @@ infoEvents: 0
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="5"
+        <li class="test-item"  status="pass" test-id="4"
           author="vivepate"
-          tag="SmokeTest"
-          device="vivepate-mac-MacOSX-10.16">
+          tag="RegressionTest"
+          device="vivepate-mac-MacOSX-13.3.1">
           <div class="test-detail">
-            <p class="name"><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></p>
+            <p class="name"><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></p>
             <p class="text-sm">
-              <span>13:55:03</span> / <span>00:00:07:510</span>
+              <span>16:15:28</span> / <span>00:00:16:143</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -450,18 +407,18 @@ infoEvents: 0
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass"><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></h5>
-<span class='badge badge-success'>03.17.2023 13:55:03</span>
-<span class='badge badge-danger'>03.17.2023 13:55:11</span>
-<span class='badge badge-default'>00:00:07:510</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<h5 class="test-status text-pass"><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></h5>
+<span class='badge badge-success'>10.12.2023 16:15:28</span>
+<span class='badge badge-danger'>10.12.2023 16:15:44</span>
+<span class='badge badge-default'>00:00:16:143</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
-<span class="badge badge-pill badge-default">SmokeTest</span>
-<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-10.16</span></div>
-<div class="m-t-10 m-l-5"><span id ="addProductHotSeller"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Home.HomeTest.addProductHotSeller</b></span></div>
+<span class="badge badge-pill badge-default">RegressionTest</span>
+<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-13.3.1</span></div>
+<div class="m-t-10 m-l-5"><span id ="addProductFromLumaLatest"><b>Test Method: com.test.automation.AutomationExercise_TestNG.NewArrival.NewArrivalTest.addProductFromLumaLatest</b></span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -469,9 +426,9 @@ infoEvents: 0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:55:11</td>
+        <td>16:15:44</td>
         <td>
-          <span class='badge white-text green'>addProductHotSeller - Test Case Passed.</span>
+          <span class='badge white-text green'>addProductFromLumaLatest - Test Case Passed.</span>
         </td>
       </tr>
   </tbody>
@@ -482,11 +439,11 @@ infoEvents: 0
         <li class="test-item"  status="pass" test-id="6"
           author="vivepate"
           tag="RegressionTest"
-          device="vivepate-mac-MacOSX-10.16">
+          device="vivepate-mac-MacOSX-13.3.1">
           <div class="test-detail">
             <p class="name"><b>Luma_Home_TC_1: Verify First Product Details from Hot Seller Section</b></p>
             <p class="text-sm">
-              <span>13:55:11</span> / <span>00:00:03:758</span>
+              <span>16:15:42</span> / <span>00:00:05:409</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -495,16 +452,16 @@ infoEvents: 0
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass"><b>Luma_Home_TC_1: Verify First Product Details from Hot Seller Section</b></h5>
-<span class='badge badge-success'>03.17.2023 13:55:11</span>
-<span class='badge badge-danger'>03.17.2023 13:55:15</span>
-<span class='badge badge-default'>00:00:03:758</span>
+<span class='badge badge-success'>10.12.2023 16:15:42</span>
+<span class='badge badge-danger'>10.12.2023 16:15:48</span>
+<span class='badge badge-default'>00:00:05:409</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
 <span class="badge badge-pill badge-default">RegressionTest</span>
-<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-10.16</span></div>
+<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-13.3.1</span></div>
 <div class="m-t-10 m-l-5"><span id ="verifyProductDetailHotSeller"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Home.HomeTest.verifyProductDetailHotSeller</b></span></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -513,7 +470,7 @@ infoEvents: 0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:55:15</td>
+        <td>16:15:48</td>
         <td>
           <span class='badge white-text green'>verifyProductDetailHotSeller - Test Case Passed.</span>
         </td>
@@ -525,12 +482,12 @@ infoEvents: 0
         </li>
         <li class="test-item"  status="pass" test-id="7"
           author="vivepate"
-          tag="RegressionTest"
-          device="vivepate-mac-MacOSX-10.16">
+          tag="SmokeTest"
+          device="vivepate-mac-MacOSX-13.3.1">
           <div class="test-detail">
-            <p class="name"><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></p>
+            <p class="name"><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></p>
             <p class="text-sm">
-              <span>13:55:12</span> / <span>00:00:04:412</span>
+              <span>16:15:43</span> / <span>00:00:08:304</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -538,18 +495,18 @@ infoEvents: 0
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass"><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></h5>
-<span class='badge badge-success'>03.17.2023 13:55:12</span>
-<span class='badge badge-danger'>03.17.2023 13:55:16</span>
-<span class='badge badge-default'>00:00:04:412</span>
+<h5 class="test-status text-pass"><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></h5>
+<span class='badge badge-success'>10.12.2023 16:15:43</span>
+<span class='badge badge-danger'>10.12.2023 16:15:52</span>
+<span class='badge badge-default'>00:00:08:304</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
-<span class="badge badge-pill badge-default">RegressionTest</span>
-<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-10.16</span></div>
-<div class="m-t-10 m-l-5"><span id ="verifyProductDetailNewArrivalPage"><b>Test Method: com.test.automation.AutomationExercise_TestNG.NewArrival.NewArrivalTest.verifyProductDetailNewArrivalPage</b></span></div>
+<span class="badge badge-pill badge-default">SmokeTest</span>
+<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-13.3.1</span></div>
+<div class="m-t-10 m-l-5"><span id ="addProductToCompareList"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Men.MenTest.addProductToCompareList</b></span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -557,9 +514,9 @@ infoEvents: 0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:55:16</td>
+        <td>16:15:52</td>
         <td>
-          <span class='badge white-text green'>verifyProductDetailNewArrivalPage - Test Case Passed.</span>
+          <span class='badge white-text green'>addProductToCompareList - Test Case Passed.</span>
         </td>
       </tr>
   </tbody>
@@ -570,11 +527,11 @@ infoEvents: 0
         <li class="test-item"  status="pass" test-id="8"
           author="vivepate"
           tag="RegressionTest"
-          device="vivepate-mac-MacOSX-10.16">
+          device="vivepate-mac-MacOSX-13.3.1">
           <div class="test-detail">
-            <p class="name"><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></p>
+            <p class="name"><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></p>
             <p class="text-sm">
-              <span>13:56:21</span> / <span>00:01:14:197</span>
+              <span>16:15:44</span> / <span>00:00:08:895</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -582,18 +539,18 @@ infoEvents: 0
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass"><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></h5>
-<span class='badge badge-success'>03.17.2023 13:56:21</span>
-<span class='badge badge-danger'>03.17.2023 13:57:35</span>
-<span class='badge badge-default'>00:01:14:197</span>
+<h5 class="test-status text-pass"><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></h5>
+<span class='badge badge-success'>10.12.2023 16:15:44</span>
+<span class='badge badge-danger'>10.12.2023 16:15:53</span>
+<span class='badge badge-default'>00:00:08:895</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
 <span class="badge badge-pill badge-default">RegressionTest</span>
-<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-10.16</span></div>
-<div class="m-t-10 m-l-5"><span id ="loginLogoutWithValidCredential"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Login.LoginTest.loginLogoutWithValidCredential</b></span></div>
+<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-13.3.1</span></div>
+<div class="m-t-10 m-l-5"><span id ="verifyProductDetailNewArrivalPage"><b>Test Method: com.test.automation.AutomationExercise_TestNG.NewArrival.NewArrivalTest.verifyProductDetailNewArrivalPage</b></span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -601,9 +558,9 @@ infoEvents: 0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:57:35</td>
+        <td>16:15:53</td>
         <td>
-          <span class='badge white-text green'>loginLogoutWithValidCredential - Test Case Passed.</span>
+          <span class='badge white-text green'>verifyProductDetailNewArrivalPage - Test Case Passed.</span>
         </td>
       </tr>
   </tbody>
@@ -614,11 +571,11 @@ infoEvents: 0
         <li class="test-item"  status="pass" test-id="9"
           author="vivepate"
           tag="RegressionTest"
-          device="vivepate-mac-MacOSX-10.16">
+          device="vivepate-mac-MacOSX-13.3.1">
           <div class="test-detail">
-            <p class="name"><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></p>
+            <p class="name"><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></p>
             <p class="text-sm">
-              <span>13:57:35</span> / <span>00:00:05:522</span>
+              <span>16:16:50</span> / <span>00:01:13:593</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -626,18 +583,18 @@ infoEvents: 0
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass"><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></h5>
-<span class='badge badge-success'>03.17.2023 13:57:35</span>
-<span class='badge badge-danger'>03.17.2023 13:57:40</span>
-<span class='badge badge-default'>00:00:05:522</span>
+<h5 class="test-status text-pass"><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></h5>
+<span class='badge badge-success'>10.12.2023 16:16:50</span>
+<span class='badge badge-danger'>10.12.2023 16:18:04</span>
+<span class='badge badge-default'>00:01:13:593</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
 <span class="badge badge-pill badge-default">RegressionTest</span>
-<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-10.16</span></div>
-<div class="m-t-10 m-l-5"><span id ="loginWithInValidCredential"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Login.LoginTest.loginWithInValidCredential</b></span></div>
+<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-13.3.1</span></div>
+<div class="m-t-10 m-l-5"><span id ="loginLogoutWithValidCredential"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Login.LoginTest.loginLogoutWithValidCredential</b></span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -645,9 +602,9 @@ infoEvents: 0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>13:57:40</td>
+        <td>16:18:04</td>
         <td>
-          <span class='badge white-text green'>loginWithInValidCredential - Test Case Passed.</span>
+          <span class='badge white-text green'>loginLogoutWithValidCredential - Test Case Passed.</span>
         </td>
       </tr>
   </tbody>
@@ -655,14 +612,76 @@ infoEvents: 0
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="10"
+        <li class="test-item"  status="fail" test-id="11"
           author="vivepate"
           tag="RegressionTest"
-          device="vivepate-mac-MacOSX-10.16">
+          device="vivepate-mac-MacOSX-13.3.1">
+          <div class="test-detail">
+            <p class="name"><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></p>
+            <p class="text-sm">
+              <span>16:18:08</span> / <span>00:00:05:884</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail"><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></h5>
+<span class='badge badge-success'>10.12.2023 16:18:08</span>
+<span class='badge badge-danger'>10.12.2023 16:18:14</span>
+<span class='badge badge-default'>00:00:05:884</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
+<span class="badge badge-pill badge-default">RegressionTest</span>
+<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-13.3.1</span></div>
+<div class="m-t-10 m-l-5"><span id ="loginWithInValidCredential"><b>Test Method: com.test.automation.AutomationExercise_TestNG.Login.LoginTest.loginWithInValidCredential</b></span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>16:18:13</td>
+        <td>
+          <span class='badge white-text red'>loginWithInValidCredential - Test Case Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>16:18:13</td>
+        <td>
+          <br><h5 style="color: red"><b>Assertion Error: </b></h5><br><p>The&nbsp;following&nbsp;asserts&nbsp;failed:<br>	Error&nbsp;message&nbsp;shown&nbsp;successfully&nbsp;after&nbsp;trying&nbsp;to&nbsp;login&nbsp;with&nbsp;invalid&nbsp;credentials&nbsp;expected&nbsp;[Incorrect&nbsp;CAPTCHA]&nbsp;but&nbsp;found&nbsp;[The&nbsp;account&nbsp;sign-in&nbsp;was&nbsp;incorrect&nbsp;or&nbsp;your&nbsp;account&nbsp;is&nbsp;disabled&nbsp;temporarily.&nbsp;Please&nbsp;wait&nbsp;and&nbsp;try&nbsp;again&nbsp;later.]<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;com.test.automation.AutomationExercise_TestNG.Login.LoginTest.loginWithInValidCredential(LoginTest.java:112)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native&nbsp;Method)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;java.base/java.lang.reflect.Method.invoke(Method.java:566)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)<br>&nbsp;&nbsp;&nbsp;&nbsp;at&nbsp;java.base/java.lang.Thread.run(Thread.java:834)</p>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>16:18:14</td>
+        <td>
+          <span id ="loginWithInValidCredential"><b>Exception Snapshot: </b></span>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/vivepate/git/AutomationExercise_TestNG/AutomationExercise_TestNG/ScreenShots/loginWithInValidCredential.png' src="/Users/vivepate/git/AutomationExercise_TestNG/AutomationExercise_TestNG/ScreenShots/loginWithInValidCredential.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author="vivepate"
+          tag="RegressionTest"
+          device="vivepate-mac-MacOSX-13.3.1">
           <div class="test-detail">
             <p class="name"><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></p>
             <p class="text-sm">
-              <span>13:58:16</span> / <span>00:02:25:458</span>
+              <span>16:18:46</span> / <span>00:02:33:560</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -671,16 +690,16 @@ infoEvents: 0
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass"><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></h5>
-<span class='badge badge-success'>03.17.2023 13:58:16</span>
-<span class='badge badge-danger'>03.17.2023 14:00:41</span>
-<span class='badge badge-default'>00:02:25:458</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-success'>10.12.2023 16:18:46</span>
+<span class='badge badge-danger'>10.12.2023 16:21:19</span>
+<span class='badge badge-default'>00:02:33:560</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">vivepate</span>
 <span class="badge badge-pill badge-default">RegressionTest</span>
-<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-10.16</span></div>
+<span class="badge badge-pill badge-default">vivepate-mac-MacOSX-13.3.1</span></div>
 <div class="m-t-10 m-l-5"><span id ="removeProductFromMyWishList"><b>Test Method: com.test.automation.AutomationExercise_TestNG.MyWishList.MyWishListTest.removeProductFromMyWishList</b></span></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -689,7 +708,7 @@ infoEvents: 0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>14:00:41</td>
+        <td>16:21:19</td>
         <td>
           <span class='badge white-text green'>removeProductFromMyWishList - Test Case Passed.</span>
         </td>
@@ -719,64 +738,19 @@ infoEvents: 0
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
-</span>
-<p class="name">SmokeTest</p>
-<p class="duration text-sm">3 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>SmokeTest</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'><b>Luma_Login_TC_1: Verify Login Functionality with Valid Credentials</b></a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>6</span>
-<span class='badge log badge-skip'>1</span>
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>2</span>
 </span>
 <p class="name">RegressionTest</p>
-<p class="duration text-sm">7 tests</p>
+<p class="duration text-sm">8 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>RegressionTest</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>2 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -789,51 +763,114 @@ infoEvents: 0
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>13:55:03 pm</td>
+<td>16:15:28 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
+<a href="#" class="linked" test-id='3' id='3'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
+<td>16:15:28 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></a>
+<a href="#" class="linked" test-id='4' id='4'><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:11 pm</td>
+<td>16:15:42 pm</td>
 <td>
 <a href="#" class="linked" test-id='6' id='6'><b>Luma_Home_TC_1: Verify First Product Details from Hot Seller Section</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:12 pm</td>
+<td>16:15:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></a>
+<a href="#" class="linked" test-id='8' id='8'><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:56:21 pm</td>
+<td>16:16:50 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></a>
+<a href="#" class="linked" test-id='9' id='9'><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>16:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:18:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:57:35 pm</td>
+<td>16:18:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></a>
+<a href="#" class="linked" test-id='12' id='12'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-skip'>1</span>
+</span>
+<p class="name">SmokeTest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>SmokeTest</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:15:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:58:16 pm</td>
+<td>16:15:28 pm</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
+<a href="#" class="linked" test-id='2' id='2'><b>Luma_Login_TC_1: Verify Login Functionality with Valid Credentials</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>16:15:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:15:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></a>
 </td>
 </tr>
 </tbody>
@@ -859,17 +896,19 @@ infoEvents: 0
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>9</span>
-<span class='badge log badge-skip'>1</span>
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
 </span>
-<p class="name">vivepate-mac-MacOSX-10.16</p>
-<p class="duration text-sm">10 tests</p>
+<p class="name">vivepate-mac-MacOSX-13.3.1</p>
+<p class="duration text-sm">12 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>vivepate-mac-MacOSX-10.16</h4>
-<span status="pass" class='badge log pass-bg'>9 passed</span>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<h4>vivepate-mac-MacOSX-13.3.1</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -880,74 +919,88 @@ infoEvents: 0
 </tr>
 </thead>
 <tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:15:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:15:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'><b>Luma_Login_TC_1: Verify Login Functionality with Valid Credentials</b></a>
+</td>
+</tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>13:55:03 pm</td>
+<td>16:15:28 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
+<a href="#" class="linked" test-id='3' id='3'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
+<td>16:15:28 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></a>
+<a href="#" class="linked" test-id='4' id='4'><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>16:15:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'><b>Luma_Login_TC_1: Verify Login Functionality with Valid Credentials</b></a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:11 pm</td>
+<td>16:15:42 pm</td>
 <td>
 <a href="#" class="linked" test-id='6' id='6'><b>Luma_Home_TC_1: Verify First Product Details from Hot Seller Section</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:12 pm</td>
+<td>16:15:43 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></a>
+<a href="#" class="linked" test-id='7' id='7'><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:56:21 pm</td>
+<td>16:15:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></a>
+<a href="#" class="linked" test-id='8' id='8'><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:57:35 pm</td>
+<td>16:16:50 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></a>
+<a href="#" class="linked" test-id='9' id='9'><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>16:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:18:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:58:16 pm</td>
+<td>16:18:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
+<a href="#" class="linked" test-id='12' id='12'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
 </td>
 </tr>
 </tbody>
@@ -973,17 +1026,19 @@ infoEvents: 0
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>9</span>
-<span class='badge log badge-skip'>1</span>
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
 </span>
 <p class="name">vivepate</p>
-<p class="duration text-sm">10 tests</p>
+<p class="duration text-sm">12 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>vivepate</h4>
-<span status="pass" class='badge log pass-bg'>9 passed</span>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -994,74 +1049,88 @@ infoEvents: 0
 </tr>
 </thead>
 <tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:15:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:15:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'><b>Luma_Login_TC_1: Verify Login Functionality with Valid Credentials</b></a>
+</td>
+</tr>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>13:55:03 pm</td>
+<td>16:15:28 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
+<a href="#" class="linked" test-id='3' id='3'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
+<td>16:15:28 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></a>
+<a href="#" class="linked" test-id='4' id='4'><b>Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>16:15:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'><b>Luma_Login_TC_1: Verify Login Functionality with Valid Credentials</b></a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:03 pm</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'><b>Luma_Home_TC_2: Add Product into cart from Hot Seller Section</b></a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:11 pm</td>
+<td>16:15:42 pm</td>
 <td>
 <a href="#" class="linked" test-id='6' id='6'><b>Luma_Home_TC_1: Verify First Product Details from Hot Seller Section</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:55:12 pm</td>
+<td>16:15:43 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></a>
+<a href="#" class="linked" test-id='7' id='7'><b>Luma_Men_TC_1: Add Product to Product Compare List from Men's Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:56:21 pm</td>
+<td>16:15:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></a>
+<a href="#" class="linked" test-id='8' id='8'><b>Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:57:35 pm</td>
+<td>16:16:50 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></a>
+<a href="#" class="linked" test-id='9' id='9'><b>Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>16:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:18:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'><b>Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.</b></a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:58:16 pm</td>
+<td>16:18:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='10' id='10'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
+<a href="#" class="linked" test-id='12' id='12'><b>Luma_MyWishList_TC_1: Remove Product from My WishList Page</b></a>
 </td>
 </tr>
 </tbody>
