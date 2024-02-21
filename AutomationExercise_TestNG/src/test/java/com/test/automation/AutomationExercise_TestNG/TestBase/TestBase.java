@@ -16,23 +16,28 @@ import test.automationframework.Utils.Efficacies;
 public class TestBase {
 
 	Properties emailProperty;
+	Properties configProperty;
 
 	@BeforeSuite(alwaysRun = true)
-	@Parameters({ "emailConfiguration"})
-	public void intializeEmailConfiguration(String emailConfiguration) throws IOException {
-		emailProperty = new Efficacies().loadPropertyFile(emailConfiguration);
+	@Parameters({ "environment"})
+	public void intializeEmailConfiguration(String environment) throws IOException {
+		configProperty = new Efficacies().loadPropertyFile(environment);
+		if (configProperty.getProperty("sendEmail").equalsIgnoreCase("yes"))
+			emailProperty = new Efficacies().loadPropertyFile("emailConfig.properties");
 	}
 
 	@AfterSuite
-	public void emailSentLogic() throws InterruptedException {
-		EmailTestExecutionReports email = new EmailTestExecutionReports(emailProperty);
-		Session session = email.setBasicEmailConfiguration().createNewEmailSession();
-		Message msg;
-		try {
-			msg = email.setEmailMsgContent(session);
-			email.sendEmail(msg, emailProperty.getProperty("executionReport"));
-		} catch (Exception e) {
-			System.out.println(e.getLocalizedMessage());
+	public void emailSentLogic() throws InterruptedException, IOException {
+		if (configProperty.getProperty("sendEmail").equalsIgnoreCase("yes")) {
+			EmailTestExecutionReports email = new EmailTestExecutionReports(emailProperty);
+			Session session = email.setBasicEmailConfiguration().createNewEmailSession();
+			Message msg;
+			try {
+				msg = email.setEmailMsgContent(session);
+				email.sendEmail(msg, emailProperty.getProperty("executionReport"));
+			} catch (Exception e) {
+				System.out.println(e.getLocalizedMessage());
+			}
 		}
 	}
 }

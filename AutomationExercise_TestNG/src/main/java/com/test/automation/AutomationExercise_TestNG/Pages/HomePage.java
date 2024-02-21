@@ -3,6 +3,7 @@ package com.test.automation.AutomationExercise_TestNG.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -14,7 +15,8 @@ public class HomePage extends StartUpPage{
 	@FindBy(partialLinkText="Create an Account")
 	public WebElement createAcclnk;
 	
-	@FindBy(css="li.greet>span.logged-in")
+	@CacheLookup
+	@FindBy(css="div.panel li.greet>span.logged-in")
 	public WebElement loggedInUserName;
 	
 	@FindBy(css="li.customer-welcome button.switch")
@@ -26,8 +28,8 @@ public class HomePage extends StartUpPage{
 	@FindBy(partialLinkText="Sign Out")
 	public WebElement logoutLnk;
 	
-	@FindBy(xpath="//li[contains(@class,'welcome')]//span[contains(text(),'Default welcome msg')]")
-	public WebElement defaultWelMsg;
+	@FindBy(xpath="//div//main//h1[contains(@class,'page-title')]//span[contains(text(),'Home Page')]")
+	public WebElement defaultHomePageTitle;
 	
 	@FindBy(css="li.greet>span.not-logged-in")
 	public WebElement defaultUserName;
@@ -47,6 +49,9 @@ public class HomePage extends StartUpPage{
 	@FindBy(partialLinkText="Men")
 	public WebElement menlnk;
 	
+	@FindBy(css="div.header li.welcome>span.not-logged-in")
+	public WebElement singOutMsg;
+	
 	String xpathProductlnk="//div[@class='product-item-details']//a[contains(text(),'{PARAM1}')]";
 	
 	public HomePage(WebDriver driver) {
@@ -64,13 +69,13 @@ public class HomePage extends StartUpPage{
 	}
 	
 	public HomePage waitForHomePageToLoad() throws Exception{
-		ngHelper.waitTillPageTitleMatches("Home Page", maxWaitTime)
-				.waitTillElementIsVisible(defaultWelMsg, maxWaitTime);
+		ngHelper.waitTillPageTitleMatches("Home Page", maxWaitTime);
 		return PageFactory.initElements(driver, HomePage.class);
 	}	
 
 	public HomePage waitForHomePageWithLoggedInUserToLoad() throws Exception {
-		ngHelper.waitTillElementIsInvisible(defaultWelMsg, maxWaitTime);
+		ngHelper.waitTillPageTitleMatches("Home Page", maxWaitTime)
+				.waitTillElementIsInvisible(singOutMsg, highWaitTime);
 		return PageFactory.initElements(driver, HomePage.class);
 	}
 	
@@ -87,7 +92,8 @@ public class HomePage extends StartUpPage{
 	}
 	
 	public String getLoggedInUser() throws Exception {
-		return ngHelper.waitTillElementIsVisible(loggedInUserName, maxWaitTime)
+		return ngHelper.waitTillElementIsVisible(loggedInUserName, highWaitTime)
+					   .waitTillTextIsVisible(loggedInUserName, "Welcome", highWaitTime)
 					   .getInnerText(loggedInUserName);
 	}
 	

@@ -53,7 +53,7 @@ public class MyWishListTest extends TestBase {
 	
 	@Test(description = "Luma_MyWishList_TC_1: Remove Product from My WishList Page", groups = {
 			"Regression Test" })
-	public void removeProductFromMyWishList() throws Exception {
+	public void MyWishList_TC1_RemoveProductFromWishList() throws Exception {
 		String jsonFilePath = "/MyWishList/MyWishList_TC1.json";
 
 		try {

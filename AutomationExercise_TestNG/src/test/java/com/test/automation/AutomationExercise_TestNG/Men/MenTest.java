@@ -51,7 +51,7 @@ public class MenTest extends TestBase {
 
 	@Test(description = "Luma_Men_TC_1: Add Product to Product Compare List from Men's Page", groups = {
 			"Smoke Test" })
-	public void addProductToCompareList() throws Exception {
+	public void Men_TC1_AddToCompare() throws Exception {
 		String jsonFilePath = "/Men/Men_TC1.json";
 
 		try {

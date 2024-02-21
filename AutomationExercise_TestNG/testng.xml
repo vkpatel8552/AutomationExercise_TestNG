@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="AutomationExcerices: Regession Suite (Chrome)"
+<suite name="AutomationExcerices: Regession Suite"
 	verbose="2">
 	   
 	<parameter name="runParallel" value="true" />
-	<parameter name="emailConfiguration"
-		value="emailConfig.properties" />
-	   
 	<parameter name="environment" value="config.properties" />
-	   
 	<parameter name="browser" value="Chrome" />
 
 	<listeners>
 		<listener
 			class-name="test.automationframework.Listeners.ExtentReportListener"></listener>
 		<listener
+			class-name="test.automationframework.Kibana.KibanaIntegrationListener"></listener>
+		<listener
 			class-name="test.automationframework.Listeners.RetryListener"></listener>
 	</listeners>
 
-	<test name="AutomationExercise" parallel="classes"
-		thread-count="5">
+	<test name="AutomationExercise_Chrome" parallel="classes"
+	thread-count="5">
+	
+	<parameter name="runParallel" value="true" />
+	<parameter name="environment" value="config.properties" />
+	<parameter name="browser" value="Chrome" />
+	
+		<classes>
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.Login.LoginTest" />
+			
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.Home.HomeTest" />
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.NewArrival.NewArrivalTest" />
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.Men.MenTest" />
+			<class
+				name="com.test.automation.AutomationExercise_TestNG.MyWishList.MyWishListTest" />
+		</classes>
+	</test>
+	
+	<test name="AutomationExercise_FireFox" parallel="classes"
+	thread-count="5">
+	
+	<parameter name="runParallel" value="true" />
+	<parameter name="environment" value="config.properties" />
+	<parameter name="browser" value="Firefox" />
+	
 		<classes>
 			<class
 				name="com.test.automation.AutomationExercise_TestNG.Login.LoginTest" />
@@ -27,7 +52,7 @@
 			<class
 				name="com.test.automation.AutomationExercise_TestNG.Home.HomeTest" />
 			<class
-				name="com.test.automation.AutomationExercise_TestNG.NewArrival.NewArrivalTest" /> 
+				name="com.test.automation.AutomationExercise_TestNG.NewArrival.NewArrivalTest" />
 			<class
 				name="com.test.automation.AutomationExercise_TestNG.MyWishList.MyWishListTest" />
 		</classes>

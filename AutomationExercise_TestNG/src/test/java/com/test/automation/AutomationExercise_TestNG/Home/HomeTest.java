@@ -49,7 +49,7 @@ public class HomeTest extends TestBase {
 
 	@Test(description = "Luma_Home_TC_1: Verify First Product Details from Hot Seller Section", groups = {
 			"Regression Test" })
-	public void verifyProductDetailHotSeller() throws Exception {
+	public void Home_TC1_FirstHotSellerProduct() throws Exception {
 		String jsonFilePath = "/Home/Home_TC1.json";
 
 		try {
@@ -114,7 +114,7 @@ public class HomeTest extends TestBase {
 	}
 
 	@Test(description = "Luma_Home_TC_2: Add Product into cart from Hot Seller Section", groups = { "Smoke Test" })
-	public void addProductHotSeller() throws Exception {
+	public void Home_TC2_AddProductFromHoteSeller() throws Exception {
 		String jsonFilePath = "/Home/Home_TC2.json";
 
 		try {

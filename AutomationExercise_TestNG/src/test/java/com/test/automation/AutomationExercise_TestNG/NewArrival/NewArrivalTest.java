@@ -51,7 +51,7 @@ public class NewArrivalTest extends TestBase {
 
 	@Test(description = "Luma_NewArrival_TC_1: Verify First Product Details from New Arrival Page", groups = {
 			"Regression Test" })
-	public void verifyProductDetailNewArrivalPage() throws Exception {
+	public void NewArrival_TC1_FirstProductNewArrival() throws Exception {
 		String jsonFilePath = "/NewArrival/NewArrival_TC1.json";
 
 		try {
@@ -117,7 +117,7 @@ public class NewArrivalTest extends TestBase {
 
 	@Test(description = "Luma_NewArrival_TC_2: Add Product into cart from Luma's Latest Collection Section", groups = {
 			"Regression Test" })
-	public void addProductFromLumaLatest() throws Exception {
+	public void NewArrival_TC2_AddToCartFromLatestCollection() throws Exception {
 		String jsonFilePath = "/NewArrival/NewArrival_TC2.json";
 
 		try {

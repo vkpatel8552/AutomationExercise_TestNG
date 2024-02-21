@@ -46,7 +46,7 @@ public class LoginTest extends TestBase {
 	}
 
 	@Test(description = "Luma_Login_TC_1: Verify Login Functionality with Valid Credentials", groups = { "Smoke Test" }, priority=0)
-	public void loginWithValidCredential() throws Exception {
+	public void Login_TC1_LoginValidCred() throws Exception {
 		String jsonFilePath = "/Login/Login_TC1.json";
 
 		try {
@@ -84,7 +84,7 @@ public class LoginTest extends TestBase {
 
 	@Test(description = "Luma_Login_TC_2: Verify Login Functionality with Invalid Credentials.", groups = {
 			"Regression Test" }, priority=2)
-	public void loginWithInValidCredential() throws Exception {
+	public void Login_TC2_LoginInvalidCred() throws Exception {
 		String jsonFilePath = "/Login/Login_TC2.json";
 
 		try {
@@ -118,7 +118,7 @@ public class LoginTest extends TestBase {
 
 	@Test(description = "Luma_Login_TC_3: Verify Login-LogOut Functionality with Valid Credentials", groups = {
 			"Regression Test" }, priority=1)
-	public void loginLogoutWithValidCredential() throws Exception {
+	public void Login_TC3_LoginLogout() throws Exception {
 		String jsonFilePath = "/Login/Login_TC3.json";
 
 		try {

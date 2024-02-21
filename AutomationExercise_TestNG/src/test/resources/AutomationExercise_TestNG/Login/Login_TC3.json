@@ -4,6 +4,6 @@
 		"loggedInUserPassword":"test@12345",
 		"loginPageHeader":"Customer Login",
 		"userWelcomeMsg":"Welcome, kk patel!",
-		"defaultWelcomeMsg":"Default welcome msg!"
+		"defaultWelcomeMsg":"Click “Write for us” link in the footer to submit a guest post"
 	}
 }
