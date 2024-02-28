@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="AutomationExcerices: Regession Suite (Chrome)"
 	verbose="2">
-
+	
+	<parameter name="environment" value="config.properties" />     
+	    
 	<listeners>
 		<listener
 			class-name="test.automationframework.Listeners.ExtentReportListener"></listener>
-		<listener
-			class-name="test.automationframework.Kibana.KibanaIntegrationListener"></listener>
 		<listener
 			class-name="test.automationframework.Listeners.RetryListener"></listener>
 	</listeners>
@@ -15,8 +15,6 @@
 		thread-count="5">
 
 		<parameter name="runParallel" value="true" />    
-	    <parameter name="environment" value="config.properties" />     
-	    <parameter name="emailConfig" value="emailConfig.properties" />     
 	    <parameter name="browser" value="Chrome" />
 		<classes>
 			<class

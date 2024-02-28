@@ -2,10 +2,8 @@
 <suite name="AutomationExcerices: Regession Suite"
 	verbose="2">
 	   
-	<parameter name="runParallel" value="true" />
 	<parameter name="environment" value="config.properties" />
-	<parameter name="browser" value="Chrome" />
-
+	
 	<listeners>
 		<listener
 			class-name="test.automationframework.Listeners.ExtentReportListener"></listener>
@@ -19,7 +17,6 @@
 	thread-count="5">
 	
 	<parameter name="runParallel" value="true" />
-	<parameter name="environment" value="config.properties" />
 	<parameter name="browser" value="Chrome" />
 	
 		<classes>
@@ -41,7 +38,6 @@
 	thread-count="5">
 	
 	<parameter name="runParallel" value="true" />
-	<parameter name="environment" value="config.properties" />
 	<parameter name="browser" value="Firefox" />
 	
 		<classes>
