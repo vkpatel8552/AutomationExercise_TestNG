@@ -19,7 +19,7 @@
 		<classes>
 			<class
 				name="com.test.automation.AutomationExercise_TestNG.Login.LoginTest" />
-			<!-- <class
+			<class
 				name="com.test.automation.AutomationExercise_TestNG.Men.MenTest" />
 			<class
 				name="com.test.automation.AutomationExercise_TestNG.Home.HomeTest" />
@@ -29,7 +29,6 @@
 			<class
 				name="com.test.automation.AutomationExercise_TestNG.MyWishList.MyWishListTest"
 			/>
-		-->
 		</classes>
 	</test>
 </suite>

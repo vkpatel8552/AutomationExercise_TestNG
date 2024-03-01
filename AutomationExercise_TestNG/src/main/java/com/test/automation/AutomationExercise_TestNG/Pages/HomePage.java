@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class HomePage extends StartUpPage{
 
@@ -15,7 +16,6 @@ public class HomePage extends StartUpPage{
 	@FindBy(partialLinkText="Create an Account")
 	public WebElement createAcclnk;
 	
-	@CacheLookup
 	@FindBy(css="div.panel li.greet>span.logged-in")
 	public WebElement loggedInUserName;
 	
@@ -56,7 +56,7 @@ public class HomePage extends StartUpPage{
 	
 	public HomePage(WebDriver driver) {
 		super(driver);
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(new AjaxElementLocatorFactory(driver, maxWaitTime), this);
 	}
 	
 	public String getHomePageTitle() throws Exception {
@@ -92,8 +92,8 @@ public class HomePage extends StartUpPage{
 	}
 	
 	public String getLoggedInUser() throws Exception {
-		return ngHelper.waitTillElementIsVisible(loggedInUserName, highWaitTime)
-					   .waitTillTextIsVisible(loggedInUserName, "Welcome", highWaitTime)
+		return ngHelper.waitTillElementIsVisible(loggedInUserName, maxWaitTime)
+					   .waitTillTextIsVisible(loggedInUserName, "Welcome", maxWaitTime)
 					   .getInnerText(loggedInUserName);
 	}
 	
