@@ -33,6 +33,7 @@
 			<artifactId>xchart</artifactId>
 			<version>3.8.7</version>
 		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
