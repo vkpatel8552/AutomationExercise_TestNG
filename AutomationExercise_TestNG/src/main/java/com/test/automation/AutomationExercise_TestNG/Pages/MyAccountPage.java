@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MyAccountPage extends StartUpPage{
 
-	@FindBy(xpath="//li[contains(@class,'welcome')]//span[contains(text(),'Default welcome msg')]")
+	@FindBy(css="div.panel li.welcome>span.not-logged-in")
 	public WebElement defaultWelMsg;
 	
 	@FindBy(css="div.page-title-wrapper span")
