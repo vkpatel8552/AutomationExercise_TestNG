@@ -14,7 +14,7 @@
 	</listeners>
 
 	<test name="AutomationExercise_Chrome" parallel="classes"
-	thread-count="5">
+	thread-count="4">
 	
 	<parameter name="runParallel" value="true" />
 	<parameter name="browser" value="Chrome" />
@@ -35,7 +35,7 @@
 	</test>
 	
 	<test name="AutomationExercise_FireFox" parallel="classes"
-	thread-count="5">
+	thread-count="4">
 	
 	<parameter name="runParallel" value="true" />
 	<parameter name="browser" value="Firefox" />
@@ -43,7 +43,7 @@
 		<classes>
 			<class
 				name="com.test.automation.AutomationExercise_TestNG.Login.LoginTest" />
-			<class
+			 <class
 				name="com.test.automation.AutomationExercise_TestNG.Men.MenTest" />
 			<class
 				name="com.test.automation.AutomationExercise_TestNG.Home.HomeTest" />
